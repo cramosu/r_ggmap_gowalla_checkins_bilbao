@@ -8,7 +8,7 @@ names(data) <- new.names
 
 str(data)
 
-df <- data[, .(x=as.numeric(longitude), y= as.numeric(latitude))]
+df <- data[, .(x=longitude, y=latitude)]
 
 map <- get_map("Bilbao", zoom=14, maptype="toner",source="stamen")
 
